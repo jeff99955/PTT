@@ -10,7 +10,7 @@ for p in range (0, 10):
     content = res.content.decode()
     html = etree.HTML(content)
 
-    for i in range(4,14):
+    for i in range(5,15):
         name = html.xpath('//*[@id="app"]/div/main/div/div/div/div/div/div[3]/div[' +str(i) + ']/a/span/text()')[0]
         board = html.xpath('//*[@id="app"]/div/main/div/div/div/div/div/div[3]/div[' +str(i) + ']/div[1]/a/span/text()')[0]
         floor = html.xpath('//*[@id="app"]/div/main/div/div/div/div/div/div[3]/div[' +str(i) + ']/div[2]/div/span[1]/text()')[0]
